@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1024px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: black;
+  color: #f3f3f3;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-content: space-between;
+  padding: 50px 25px 50px 25px;
+  background-color: rgb(224, 219, 219);
+}
+
+.delivery {
+  background-image: url("/img/delivery.jpg");
+  width: 490px;
+  height: 350px;
+  border-radius: 1%;
+}
+
+.delivery p {
+  text-align: center;
+  color: red;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.delivery span {
+  color: #f3f3f3;
+}
+
+.cardapio {
+  background-color: white;
+  width: 491px;
+  height: 350px;
+  text-align: center;
+  border-radius: 1%;
+}
+
+.cardapio h2 {
+  position: relative;
+  top: 20px;
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+
+.pizzas {
+  padding: 50px 20px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pizzas ol {
+  margin-top: 25px;
+  margin-left: 40px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.pizzas ol a {
+  text-decoration: none;
+  color: black;
+}
+
+.imagem__cardapio {
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+footer {
+  height: 150px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  color: white;
+  line-height: 25px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
