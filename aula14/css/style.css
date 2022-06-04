@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  --card-background: rgb(235, 230, 230);
+  --primary-color: #00669f;
+}
+
+header {
+  background-color: #00669f;
+  color: black;
+  position: sticky;
+  z-index: 1;
+}
+
+.desc {
+  background: #1cd1b0;
+  height: 38px;
+  width: 100%;
+  line-height: 38px;
+  padding-left: 10px;
+}
+
+.titulo {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 300, "opsz" 58;
+  position: fixed;
+  top: 380px;
+  right: 15px;
+}
+
+.container-cards {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 374px;
+  height: 540px;
+  border: 1px solid white;
+  box-shadow: 5px 5px 5px darkgray;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--card-background);
+  position: relative;
+}
+
+.back__img {
+  width: 100%;
+  height: 200px;
+}
+
+.back__batman {
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__icon {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.rosto {
+  position: absolute;
+  top: 120px;
+  left: 110px;
+}
+
+.rosto img {
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px -3px black;
+}
+
+.card__content {
+  margin-top: 60px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card__content p {
+  margin-top: 20px;
+}
+
+.back__arlekina {
+  background-image: url("/img/back_arlekina.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.back__mulher {
+  background-image: url("/img/back_mulher.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.botao {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(64, 78, 206);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--primary-color);
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.git__icon {
+  position: absolute;
+  right: 30px;
+  height: 23px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-cards {
+    flex-wrap: wrap;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+}
