@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo&family=Norican&family=Oswald:wght@500&family=Roboto&family=The+Nautigal:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div:target {
+  scroll-margin-top: 9em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3dfd56;
+  background-image: linear-gradient(0deg, #3dfd56 0%, #fb0418 100%);
+  box-shadow: 0 5px 3px grey;
+}
+
+body {
+  position: relative;
+  top: 120px;
+}
+
+main {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: "The Nautigal", sans-serif;
+  font-size: 100px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin-right: 60px;
+}
+
+.nav ul li {
+  display: block;
+  background-color: rgba(214, 52, 214, 0.329);
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+}
+
+.nav ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 90vh;
+}
+
+.fundo {
+  margin-top: 150px;
+  opacity: 60%;
+}
+
+.meu__estado {
+  position: absolute;
+  width: 70%;
+  margin-top: 50px;
+  font-family: "Exo", sans-serif;
+  line-height: 50px;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.banner span {
+  font-weight: bold;
+}
+
+.Nome__estado {
+  font-weight: bold;
+  font-family: "The Nautigal", sans-serif;
+  font-size: 2.5rem;
+}
+
+.curiosidades {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 0 20px 0 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 450px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 5px 5px 3px grey;
+  background-color: azure;
+}
+
+.img__back {
+  height: 60%;
+  position: relative;
+}
+
+.img__back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.img__back h2 {
+  position: absolute;
+  bottom: 2px;
+  left: 20px;
+  font-family: "Norican", sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.festas {
+  color: white;
+}
+
+.texto__card p {
+  font-family: "Exo", sans-serif;
+  font-size: 0.85rem;
+  line-height: 20px;
+  text-align: justify;
+  margin: 5px 10px 0px 10px;
+}
+
+.video {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #ed1d1d;
+  background-image: linear-gradient(0deg, #ed1d1d 0%, #4fd453 100%);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (min-width: 781px) and (max-width: 1000px) {
+  .logo h1 {
+    display: none;
+  }
+
+  .meu__estado {
+    line-height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 780px) {
+  .logo h1 {
+    display: none;
+  }
+
+  .meu__estado {
+    line-height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo h1 {
+    display: none;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meu__estado {
+    line-height: 30px;
+    font-size: 1rem;
+  }
+
+  .curiosidades {
+    flex-wrap: wrap;
+  }
+
+  .video iframe {
+    width: 480px;
+    height: 230px;
+  }
+
+  footer img {
+    width: auto;
+  }
+}
