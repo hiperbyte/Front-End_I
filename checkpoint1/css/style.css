@@ -29,6 +29,8 @@ header {
 body {
   position: relative;
   top: 120px;
+  background-color: #f9a190;
+  background-image: linear-gradient(270deg, #f9a190 0%, #90f597 100%);
 }
 
 main {
